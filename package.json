@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "packager":"electron-packager . testApp --mac --out ./outputs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^7.1.8"
+  },
+  "dependencies": {
+    "electron-packager": "^14.1.1",
+    "timer.js": "^1.0.4"
   }
 }
